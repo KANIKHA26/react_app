@@ -4,6 +4,7 @@ import TestComponent from './components/functionalComponents/testComponents';
 import TestClassComp from './components/classComponents/testClassComponent';
 import Login from './components/classComponents/loginComponent';
 import PropsComponent from './components/functionalComponents/PropsComponent';
+import StateComponent from './components/classComponents/StateComponent';
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       {/* <TestClassComp/> */}
       <header className="App-header">
        {/* <TestComponent/>  */}
+       <StateComponent/>
        <PropsComponent name = "kani" course="MERN"/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
