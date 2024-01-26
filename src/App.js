@@ -11,6 +11,9 @@ import Experience from './components/functionalComponents/Experience';
 import Login from './components/functionalComponents/Login';
 import About from './components/functionalComponents/About';
 import Home from './components/functionalComponents/Home';
+//import Footer from './components/functionalComponents/Footer';
+import Footer from './components/functionalComponents/Footer';
+import Contact from './components/functionalComponents/contact';
 function App() {
   return (
 
@@ -25,26 +28,49 @@ function App() {
           <Route path="/Experience" element={<Experience />}>/</Route>
           <Route path="/Login" element={<Login />}>/</Route>
         </Routes>
+
       </BrowserRouter>
+      
       {/* <PropsComponent name = "kani" course="MERN"/> */}
       {/* <TestClassComp/> */}
       <header className="App-header">
         {/* <TestComponent/>  */}
         {/* <StateComponent/> */}
         {/* <PropsComponent name = "kani" course="MERN"/> */}
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {/* Edit <code>src/App.js</code> and save to reload. */}
+        </p>
+        <p>
+          <h1 style={{backgroundColor:'blueviolet'}}>WELCOME TO MERN LEARNING</h1>
+          {/* <img src="images1.png"  width={"50%"} backgroundColor={'white'}/> */}
+          <img src="images1.png" />
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          // className="App-link"
+          // href="https://reactjs.org"
+          // target="_blank"
+          // rel="noopener noreferrer"
         >
-          Learn React
+          {/* Learn React */}
         </a>
       </header>
+      
+      
+    <BrowserRouter>
+    
+      {/* <img src="images1.png" alt="image" width={"50%"} backgroundColor={'white'}/> */}
+        <Footer/>  
+       <Routes> 
+        
+        <Route path="/Contact" element={<Contact />}>/</Route>
+          {/* <Route path="/About" element={<About />}>/</Route> */}
+          {/* <Route path="/Experience" element={<Experience />}>/</Route> */}
+          {/* <Route path="/Login" element={<Login />}>/</Route>  */}
+          </Routes>
+
+      </BrowserRouter>
+      
     </div >
   );
 }

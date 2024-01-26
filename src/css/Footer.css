@@ -2,7 +2,11 @@ ol{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    /* background-color: crimson; */
+    background-color:aquamarine;
     margin: 0px;
+   
 
+}
+a{
+    text-decoration: none;
 }
