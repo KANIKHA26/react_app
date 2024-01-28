@@ -14,6 +14,10 @@ import Home from './components/functionalComponents/Home';
 //import Footer from './components/functionalComponents/Footer';
 import Footer from './components/functionalComponents/Footer';
 import Contact from './components/functionalComponents/contact';
+import Signup from './components/functionalComponents/Signup';
+import Reference from './components/functionalComponents/Reference';
+import Memo from './components/functionalComponents/Memo';
+import Callback from './components/functionalComponents/Callback';
 function App() {
   return (
 
@@ -27,6 +31,14 @@ function App() {
           <Route path="/About" element={<About />}>/</Route>
           <Route path="/Experience" element={<Experience />}>/</Route>
           <Route path="/Login" element={<Login />}>/</Route>
+          <Route path="/signup" element={<Signup />}>/</Route>
+          <Route path="/Useref" element={<Reference />}>/</Route>
+          <Route path="/Usememo" element={<Memo/>}>/</Route>
+          <Route path="/callback" element={<Callback/>}>/</Route>
+
+          
+
+          
         </Routes>
 
       </BrowserRouter>
